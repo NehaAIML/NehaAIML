@@ -8,11 +8,11 @@ src="https://raw.githubusercontent.com/Rishabh2804/Rishabh2804/master/Resources/
 
 ## A little more about me...  
 
-- 🌱 I am a Data Enthusiastic
-- 👯 I’m looking for something new or creating some project.
-- 🥅 2023 Goals: Contribute more to Open Source Data Science projects.
-- 🏆 I'm also having a great interest in Artificial Intelligence.   
-- 🏸 Fun fact: I love to write Blogs. 
+- 🌱 I am a Data Enthusiast
+- 👯 Creating innovations via projects.
+- 🥅 2023 Goals: Contribute significant insights to Open Source Data Science projects.
+- 🏆 Interested in Artificial Intelligence/Deep Learning types AIML opportunities.   
+- 🏸 Fun fact: I am a Blogger. 
 - 💁‍♀️ Check My Blog series on Medium
 
  <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Connect-with-me.gif?raw=true">
