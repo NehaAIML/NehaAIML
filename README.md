@@ -12,7 +12,7 @@ src="https://raw.githubusercontent.com/Rishabh2804/Rishabh2804/master/Resources/
 - 👯 Creating innovations via projects.
 - 🥅 2023 Goals: Contribute significant insights to Open Source Data Science Projects.
 - 🏆 Interested in Artificial Intelligence/Deep Learning types AIML opportunities.   
-- 🏸 Fun fact: I am a Blogger. I am on a journey to take Generative AI towards Exponential AI to make it Integrated AI
+- 🏸 Fun fact: I am a Blogger. I am embarking on a quest to advance Generative AI into Exponential AI, aiming to achieve Integrated AI.
 - 💁‍♀️ Check My Blog series on Medium
 
  <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Connect-with-me.gif?raw=true">
