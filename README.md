@@ -20,6 +20,7 @@ src="https://raw.githubusercontent.com/Rishabh2804/Rishabh2804/master/Resources/
 	<a href="mailto:neha.purohit.ai@gmail.com"><img img src="https://img.shields.io/badge/gmail-%23EA4335.svg?style=plastic&logo=gmail&logoColor=white" alt="Gmail"/></a>
 	<a href="https://github.com/NehaAIML"><img src="https://img.shields.io/badge/github-%23181717.svg?style=plastic&logo=github&logoColor=white" alt="GitHub"/></a>
 	<a href="https://www.linkedin.com/in/neha-purohit-ai"><img src="https://img.shields.io/badge/linkedin-%230A66C2.svg?style=plastic&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+ 	<a href="https://medium.com/@neha.purohit.ai"><img src="https://img.shields.io/badge/Medium-%23181717.svg?style=plastic&logo=medium&logoColor=white" alt="Medium"/></a>
 	
 </p>
 
