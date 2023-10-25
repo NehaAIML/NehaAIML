@@ -23,7 +23,7 @@ src="https://raw.githubusercontent.com/Rishabh2804/Rishabh2804/master/Resources/
  	<a href="https://medium.com/@neha.purohit.ai"><img src="https://img.shields.io/badge/Medium-%23181717.svg?style=plastic&logo=medium&logoColor=white" alt="Medium"/></a>
 	
 </p>
-
+<p>
 <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/OS.gif?raw=true" width=07%>Operating Systems
  &emsp;
 <p align="center">
@@ -37,4 +37,11 @@ src="https://raw.githubusercontent.com/Rishabh2804/Rishabh2804/master/Resources/
     <a href="#"><img src="https://img.shields.io/badge/pop!_os-%2348B9C7.svg?style=plastic&&logo=pop!_os&logoColor=white" /></a>
   &emsp;
     <a href="#"><img src="https://img.shields.io/badge/manjaro-%2335BF5C.svg?&style=plastic&logo=manjaro&logoColor=white" /></a>
+</p>
+<summary align="left">How about some stats?
+<img align="right" src="https://komarev.com/ghpvc/?username=NehaAIML" alt="NehaAIML" />
+</summary>
+<p align="center">
+    <img alt = "GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=NehaAIML&show_icons=true&hide=issues&icon_color=000000&hide_border=true&title_color=5391FE&text_color=555">
+    <br>
 </p>
