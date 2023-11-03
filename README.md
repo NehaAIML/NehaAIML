@@ -2,9 +2,7 @@
 
 <br>
 
-<img width="380" align="right" alt="Github"
-src="https://raw.githubusercontent.com/Rishabh2804/Rishabh2804/master/Resources/Icons/developer-girl.gif" 
-/> 
+
 
 ## A little more about me...  
 
