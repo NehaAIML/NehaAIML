@@ -1,7 +1,9 @@
 <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="70">  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Caveat&size=26&pause=1000&color=0668E1&background=FFFFFF00&random=false&width=435&lines=Bonjour%2CI'm+Neha+Purohit;Vice+President+%40UTA;Innovavting+with+Data...;Astute+Attitude!!;Solving+Data+Problems)](https://git.io/typing-svg)
 
 <br>
-
+<img width="380" align="right" alt="Github"
+src="https://raw.githubusercontent.com/Rishabh2804/Rishabh2804/master/Resources/Icons/developer-girl.gif" 
+/> 
 
 
 ## A little more about me...  
