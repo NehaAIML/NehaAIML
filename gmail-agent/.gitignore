@@ -1,0 +1,18 @@
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# Local secrets and tokens (CRITICAL - DO NOT COMMIT)
+credentials.json
+token.json
+client_secret*.json
+
+# Local SQLite databases and logs
+*.db
+*.log
+agent_output.log
+agent_error.log
+
+# System files
+.DS_Store
