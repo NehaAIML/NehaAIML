@@ -109,7 +109,9 @@ Sender: {sender}
 Body:
 {body[:4000]}
 """
-    response = ollama.chat(
+    for attempt in range(3):
+        try:
+            response = client.chat(
         model="llama3.1:8b",
         messages=[{"role": "user", "content": prompt}],
         format=EmailSummary.model_json_schema(),
