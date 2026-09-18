@@ -96,28 +96,35 @@ def extract_body(payload) -> str:
         return base64.urlsafe_b64decode(data).decode('utf-8', errors='ignore')
     return body
 
-def analyze_with_ollama(subject: str, sender: str, body: str) -> EmailSummary:
-    prompt = f"""You are an executive technology assistant. Summarize this incoming email for a morning briefing.
+def analyze_with_ollama(subject, sender, body):
+    import time
+    client = ollama.Client(timeout=120)
+    prompt = f"""
+Analyze the following email and provide an executive summary, action items, and urgency level.
+Return your output strictly as a JSON object adhering to this schema:
+{EmailSummary.model_json_schema()}
 
-Guidelines:
-- Provide exactly ONE concise, dense sentence capturing the core development.
-- Extract up to 3 high-impact technical takeaways.
-- Strip marketing fluff, sales talk, and sponsor promotions.
-
-Subject: {subject}
+Email Subject: {subject}
 Sender: {sender}
 Body:
-{body[:4000]}
+{body}
 """
     for attempt in range(3):
         try:
             response = client.chat(
-        model="llama3.1:8b",
-        messages=[{"role": "user", "content": prompt}],
-        format=EmailSummary.model_json_schema(),
-        options={"temperature": 0.1}
-    )
-    return EmailSummary.model_validate_json(response['message']['content'])
+                model="llama3.1:8b",
+                messages=[
+                    {"role": "system", "content": "You are an executive email assistant. Output valid JSON only."},
+                    {"role": "user", "content": prompt}
+                ],
+                format="json"
+            )
+            return EmailSummary.model_validate_json(response['message']['content'])
+        except Exception as e:
+            if attempt < 2:
+                time.sleep(5)
+                continue
+            raise e
 
 def send_daily_briefing(service, summaries: List[EmailSummary]):
     if not summaries:
