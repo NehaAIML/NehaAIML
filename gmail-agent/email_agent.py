@@ -98,33 +98,71 @@ def extract_body(payload) -> str:
 
 def analyze_with_ollama(subject, sender, body):
     import time
+    import json
     client = ollama.Client(timeout=120)
-    prompt = f"""
-Analyze the following email and provide an executive summary, action items, and urgency level.
-Return your output strictly as a JSON object adhering to this schema:
-{EmailSummary.model_json_schema()}
+
+    prompt = f"""You are an executive email assistant.
+Analyze this email and return a JSON object matching this exact structure:
+{{
+  "subject": "{subject}",
+  "sender": "{sender}",
+  "one_line_summary": "1-2 sentence executive summary of the content",
+  "action_items": ["Action item 1", "Action item 2"],
+  "urgency": "High"
+}}
+
+Rules:
+- "urgency" must be one of: "High", "Medium", "Low"
+- Output only valid JSON. Do not include markdown codeblocks, metadata, or explanations.
 
 Email Subject: {subject}
 Sender: {sender}
 Body:
-{body}
+{body[:2500]}
 """
+
     for attempt in range(3):
         try:
             response = client.chat(
                 model="llama3.1:8b",
                 messages=[
-                    {"role": "system", "content": "You are an executive email assistant. Output valid JSON only."},
+                    {"role": "system", "content": "You are a concise executive assistant. Output valid JSON only, without markdown wrappers or schema definitions."},
                     {"role": "user", "content": prompt}
                 ],
                 format="json"
             )
-            return EmailSummary.model_validate_json(response['message']['content'])
+            raw = response['message']['content'].strip()
+            if raw.startswith("```"):
+                raw = raw.replace("```json", "").replace("```", "").strip()
+
+            data = json.loads(raw)
+            if "properties" in data:
+                data = {
+                    "subject": subject,
+                    "sender": sender,
+                    "one_line_summary": subject,
+                    "action_items": [],
+                    "urgency": "Medium"
+                }
+
+            data.setdefault("subject", subject)
+            data.setdefault("sender", sender)
+            data.setdefault("one_line_summary", "No summary provided.")
+            data.setdefault("action_items", [])
+            data.setdefault("urgency", "Medium")
+
+            return EmailSummary.model_validate(data)
         except Exception as e:
             if attempt < 2:
-                time.sleep(5)
+                time.sleep(4)
                 continue
-            raise e
+            return EmailSummary(
+                subject=subject,
+                sender=sender,
+                one_line_summary=f"Automated digest fallback: {subject}",
+                action_items=[],
+                urgency="Medium"
+            )
 
 def send_daily_briefing(service, summaries: List[EmailSummary]):
     if not summaries:
