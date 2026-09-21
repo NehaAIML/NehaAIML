@@ -1,43 +1,39 @@
 # Neha Purohit
 
-**Executive Technology, Product & Data Leadership | CTO · CDO · CIO · CPO Scope**
+**Global Technology & Enterprise Platform Executive**  
+*Distributed Systems · Enterprise Data Governance · High-Throughput Compute · Cloud Economics*
 
-Bridging commercial product strategy, distributed platform engineering, data mesh governance, and zero-trust infrastructure to deliver enterprise-grade software and data products.
-
----
-
-### Executive Leadership Matrix
-
-* **CPO Scope — Platform as a Product (PaaP) & AI Productization**
-  * Treating internal compute fabrics and developer workflows as first-class products with low friction and self-service APIs (`slurm-ephemeral-iam-broker`, `ebpf-hpc-flow-guard`).
-  * Commercializing AI agent architectures with disciplined unit economics, zero-host recurring costs, and frictionless user flows (`autonomous-executive-agent`).
-  * Productizing data domains into governed, discoverable "Data Products" with explicit consumer contracts and guaranteed SLAs (`enterprise-data-mesh-governance`).
-
-* **CTO Scope — Distributed Platforms & Deep Systems Engineering**
-  * Architecting low-overhead compute fabrics and zero-jitter kernel observability via eBPF tracepoints (`ebpf-hpc-flow-guard`).
-  * Offloading network microsegmentation and packet processing to hardware accelerators (`dpu-offload-packet-inspector`).
-  * Designing multi-provider, local/cloud hybrid agent orchestration pipelines (`autonomous-executive-agent`).
-
-* **CDO Scope — Enterprise Data Governance & AI Context Fabrics**
-  * Establishing federated Data Mesh ecosystems with automated schema validation, dynamic PII masking, and OpenLineage contracts (`enterprise-data-mesh-governance`).
-  * Enforcing token-budget governance, zero-copy semantic caching, and context hygiene to eliminate LLM hallucinations across enterprise RAG deployments (`semantic-context-layer-rag`).
-  * Deploying high-throughput distributed event streaming with inline Great Expectations quality assertion at ingestion boundaries (`realtime-telemetry-streaming-fabric`).
-
-* **CIO Scope — Zero-Trust Security, Compliance & Cloud FinOps**
-  * Driving FinOps cloud cost optimization via Apache Iceberg micro-partition compaction and automated snapshot pruning, cutting object storage compute overhead by up to 40% (`iceberg-lakehouse-finops-optimizer`).
-  * Implementing zero-trust ephemeral workload identity federation via SPIFFE/Vault across shared high-throughput compute fleets (`slurm-ephemeral-iam-broker`).
-  * Converting compliance into verifiable code gates via Rego/OPA, automating continuous SOC2 and hardware fabric isolation controls (`eda-cluster-policy-enforcer`).
+Engineering and operating large-scale computing platforms, federated data ecosystems, and low-overhead security control planes across multi-cloud and bare-metal environments.
 
 ---
 
-### Reference Architecture Portfolio
+### Core Areas of Impact
+
+* **Enterprise Data Governance & Data Mesh Architecture**
+  * Architecting federated data domains with automated data contracts, column-level policy-as-code (OPA/Rego), dynamic PII masking, and end-to-end lineage telemetry (`enterprise-data-mesh-governance`).
+  * Enforcing semantic context hygiene, zero-copy caching, and token-budget controls to eliminate compute waste and hallucinations in enterprise GenAI pipelines (`semantic-context-layer-rag`).
+  * Real-time streaming ingestion platforms with automated Great Expectations schema validation and zero-loss quarantine boundaries (`realtime-telemetry-streaming-fabric`).
+
+* **Distributed Compute & Systems Engineering**
+  * Low-overhead in-kernel observability via lockless eBPF tracepoints (<0.18µs latency), eliminating thread stalls in high-throughput compute fleets (`ebpf-hpc-flow-guard`).
+  * Line-rate packet classification and hardware microsegmentation offloaded directly to SmartNIC/DPU cores, preserving 100% of host compute capacity (`dpu-offload-packet-inspector`).
+  * Cloud-native event agents combining local private hardware execution with serverless cloud inference and zero static hosting costs (`autonomous-executive-agent`).
+
+* **Zero-Trust Infrastructure & Cloud FinOps**
+  * Automated Lakehouse storage optimization and Apache Iceberg micro-partition compaction, cutting cloud object storage API and compute costs by up to 40% (`iceberg-lakehouse-finops-optimizer`).
+  * Ephemeral workload identity federation (SPIFFE/Vault) bound to cluster batch dispatch hooks for multi-day compute jobs (`slurm-ephemeral-iam-broker`).
+  * Policy-as-code admission gates converting SOC2, ISO27001, and InfiniBand fabric partition controls into continuous, verifiable code checks (`eda-cluster-policy-enforcer`).
+
+---
+
+### Reference Implementation Index
 
 * [**autonomous-executive-agent**](https://github.com/NehaAIML/autonomous-executive-agent) — Event-driven zero-cost intelligence pipeline with local/cloud fallback execution.
 * [**enterprise-data-mesh-governance**](https://github.com/NehaAIML/enterprise-data-mesh-governance) — Federated enterprise data mesh catalog with policy-as-code admission gates, automated PII masking, and OpenLineage contracts.
 * [**iceberg-lakehouse-finops-optimizer**](https://github.com/NehaAIML/iceberg-lakehouse-finops-optimizer) — Autonomous Apache Iceberg metadata compaction and partition optimization engine reducing cloud lakehouse compute & storage costs.
 * [**semantic-context-layer-rag**](https://github.com/NehaAIML/semantic-context-layer-rag) — Zero-copy semantic cache and enterprise context fabric governing token budgets and retrieval hygiene for enterprise LLM workloads.
 * [**realtime-telemetry-streaming-fabric**](https://github.com/NehaAIML/realtime-telemetry-streaming-fabric) — High-throughput streaming ingestion pipeline with real-time schema validation and Great Expectations data quality gates.
-* [**ebpf-hpc-flow-guard**](https://github.com/NehaAIML/ebpf-hpc-flow-guard) — Non-invasive in-kernel eBPF telemetry & process ringbuffers for high-throughput EDA compute clusters.
+* [**ebpf-hpc-flow-guard**](https://github.com/NehaAIML/ebpf-hpc-flow-guard) — Non-invasive in-kernel eBPF telemetry & process ringbuffers for high-throughput compute clusters.
 * [**slurm-ephemeral-iam-broker**](https://github.com/NehaAIML/slurm-ephemeral-iam-broker) — Ephemeral SPIFFE/Vault credential broker injecting scoped identities at Slurm job dispatch.
 * [**dpu-offload-packet-inspector**](https://github.com/NehaAIML/dpu-offload-packet-inspector) — Line-rate out-of-band packet classification and RoCEv2 fabric isolation offloaded to SmartNIC/DPU cores.
 * [**eda-cluster-policy-enforcer**](https://github.com/NehaAIML/eda-cluster-policy-enforcer) — Policy-as-code admission controller enforcing InfiniBand partition isolation and SOC2 automated compliance.
@@ -45,6 +41,6 @@ Bridging commercial product strategy, distributed platform engineering, data mes
 ---
 
 ### Executive Profile
-* **Disciplines**: Technology Strategy · Product-Led Platforms · Data Mesh Governance · Zero-Trust Security · Cloud FinOps
+* **Disciplines**: Distributed Systems · Enterprise Data Architecture · Cloud Economics · Zero-Trust Infrastructure
 * **Location**: Los Angeles, CA
 * **Portfolio**: [github.com/NehaAIML](https://github.com/NehaAIML)
